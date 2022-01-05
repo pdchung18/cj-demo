@@ -22,18 +22,16 @@ interface Props {
 
 function CheckOrderRow({ order, index }: Props) {
   return (
-    <>
-      <TableRow>
-        <TableCell>{index}</TableCell>
-        <TableCell>{order.docNoLD}</TableCell>
-        <TableCell>{order.docNoSD}</TableCell>
-        <TableCell>{order.type}</TableCell>
-        <TableCell>{order.status}</TableCell>
-        <TableCell>{order.noCrate}</TableCell>
-        <TableCell>{order.quantityTote}</TableCell>
-        <TableCell>{order.pickUpDate}</TableCell>
-      </TableRow>
-    </>
+    <TableRow>
+      <TableCell>{index}</TableCell>
+      <TableCell>{order.docNoLD}</TableCell>
+      <TableCell>{order.docNoSD}</TableCell>
+      <TableCell>{order.type}</TableCell>
+      <TableCell>{order.status}</TableCell>
+      <TableCell>{order.noCrate}</TableCell>
+      <TableCell>{order.quantityTote}</TableCell>
+      <TableCell>{order.pickUpDate}</TableCell>
+    </TableRow>
   );
 }
 
